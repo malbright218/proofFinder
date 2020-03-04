@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
         order:{type: DataTypes.INTEGER},
         line: {type: DataTypes.INTEGER},
         customer: {type: DataTypes.STRING},
-        location: {type: DataTypes.STRING}
+        locationRow: {type: DataTypes.STRING},
+        locationCol: {type: DataTypes.INTEGER}
     })
 
     return proof;
