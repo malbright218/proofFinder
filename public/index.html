@@ -7,15 +7,84 @@
   <title>Proof Finder</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="table table-bordered" id="proofTarget">
+    <table class="table table-sm table-bordered table-striped" id="proofTarget">
       <tbody></tbody>
+    </table>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" id="searchCard">
+        <form>
+          <div class="form-group">
+            <label for="proofSearch">Proof Search</label>
+            <br>
+            <input type="text" class="form-control" id="proofSearch" aria-describedby="proofHelp1" placeholder="Job-Line">
+            <small id="proofHelp1" class="form-text text-muted">Make sure to enter a job number with the line, ex
+              12345-1</small>
+          </div>
+          <button type="button" id="proofSearchBtn" class="btn btn-success">Search</button>
+          <br>
+          <br>
+          <p id="searchTarget"></p>
+        </form>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" id="addProofCard">
+        <form>
+          <div class="form-group">
+            <label for="proofAdd">Add proof</label>
+            <br>
+            <input type="text" class="form-control" id="proofAdd" aria-describedby="proofHelp2" placeholder="Job-Line">
+            <small id="proofHelp2" class="form-text text-muted">Make sure to enter a job number with the line, ex 12345-1</small>
+            <input type="text" class="form-control" id="proofLocationAdd" aria-describedby="proofHelp3" placeholder="Location">
+            <small id="proofHelp3" class="form-text text-muted">Enter a location as a letter and number, ex A1</small>
+          </div>
+          <button type="button" id="proofAddBtn" class = "btn btn-primary">Add</button>
+        </form>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" id="updateProofCard">
+        <form>
+          <div class="form-group">
+            <label for="proofUpdate">Update proof</label>
+            <br>
+            <input type="text" class="form-control" id="proofUpdate" aria-describedby="proofHelp4" placeholder="Job-Line">
+            <small id="proofHelp4" class="form-text text-muted">Make sure to enter a job number with the line, ex 12345-1</small>
+            <input type="text" class="form-control" id="proofLocationUpdate" aria-describedby="proofHelp5" placeholder="New location">
+            <small id="proofHelp5" class="form-text text-muted">Enter a location as a letter and number, ex A1</small>
+          </div>
+          <button type="button" id="proofUpdateBtn" class = "btn btn-info">Update</button>
+        </form>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" id="deleteProofCard">
+        <form>
+          <div class="form-group">
+            <label for="proofDelete">Delete proof</label>
+            <br>
+            <input type="text" class="form-control" id="proofDelete" aria-describedby="proofHelp6" placeholder="Job-Line">
+            <small id="proofHelp6" class="form-text text-muted">Make sure to enter a job number with the line, ex 12345-1</small>
+          </div>
+          <button type="button" id="proofDeleteBtn" class = "btn btn-danger">Delete</button>
+        </form>
+      </div>
     </div>
   </div>
+</div>
+ 
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
@@ -25,7 +94,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

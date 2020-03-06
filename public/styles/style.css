@@ -1,0 +1,22 @@
+.card {
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;    
+}
+
+#searchTarget {
+    font-size: 2em;
+}
+
+.pdanger {
+    color: red;
+}
+
+.btn {
+    margin-bottom: 4px;
+}
+
+table {
+    font-size: small;
+    text-align: center;
+}

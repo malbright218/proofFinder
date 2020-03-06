@@ -1,10 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
     var proof = sequelize.define("proof", {
-        order:{type: DataTypes.INTEGER},
-        line: {type: DataTypes.INTEGER},
+        orderLine:{type: DataTypes.STRING},
         customer: {type: DataTypes.STRING},
-        locationRow: {type: DataTypes.STRING},
-        locationCol: {type: DataTypes.INTEGER}
+        location: {type: DataTypes.STRING},
     })
 
     return proof;

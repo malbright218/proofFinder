@@ -38,5 +38,18 @@ module.exports = function(app) {
         })
     })
 
+    // UPDATE ROUTE
+    app.put("/api/proofs", function(req, res) {
+        db.proof.update(req.body,
+          {
+            where: {
+              id: req.body.id
+            }
+          })
+          .then(function(dbProof) {
+            res.json(dbProof);
+          });
+      });
+
 
 }
